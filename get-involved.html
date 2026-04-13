@@ -120,10 +120,76 @@
     </div>
   </section>
 
+  <section class="section bg-white">
+    <div class="container">
+      <div class="form">
+        <div class="section-header left">
+          <p class="label">Expression of Interest</p>
+          <h2>Engage with us</h2>
+          <p>Tell us about yourself and how you'd like to contribute. We'll follow up with a next step that fits.</p>
+        </div>
+        <form name="engage" method="POST" data-netlify="true" action="thank-you.html">
+          <input type="hidden" name="form-name" value="engage">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="engage-name">Name</label>
+              <input class="form-input" type="text" id="engage-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="engage-email">Email</label>
+              <input class="form-input" type="email" id="engage-email" name="email" placeholder="you@example.org" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="engage-org">Organization <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="engage-org" name="organization" placeholder="University, agency, company, etc.">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="engage-role">Role <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="engage-role" name="role" placeholder="e.g. Researcher, Policy Analyst">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="engage-sector">Which best describes you?</label>
+            <select class="form-select" id="engage-sector" name="sector" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Researcher / Academic">Researcher / Academic</option>
+              <option value="Public sector / Government">Public sector / Government</option>
+              <option value="Indigenous government / organization">Indigenous government / organization</option>
+              <option value="Industry / Technology">Industry / Technology</option>
+              <option value="Civil society / Community">Civil society / Community</option>
+              <option value="Philanthropy / Funder">Philanthropy / Funder</option>
+              <option value="Student / Emerging scholar">Student / Emerging scholar</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="engage-interest">How would you like to engage?</label>
+            <select class="form-select" id="engage-interest" name="interest" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Join a working group">Join a working group</option>
+              <option value="Contribute expertise">Contribute expertise</option>
+              <option value="Attend convenings">Attend early convenings</option>
+              <option value="Explore partnership">Explore partnership / funding</option>
+              <option value="Connect existing resources">Connect existing labs / data / resources</option>
+              <option value="General interest">General interest — keep me informed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="engage-message">Anything else? <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea" id="engage-message" name="message" placeholder="Domain, region, methods, or anything else you'd like us to know."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Submit Expression of Interest →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <section class="cta">
     <div class="container">
-      <h2>Ready to contribute?</h2>
-      <p>Reach out with an expression of interest and we'll find the right starting point for you or your organization.</p>
+      <h2>Questions first?</h2>
+      <p>If you'd rather have a conversation before committing, that's great too. Reach out and we'll find the right starting point.</p>
       <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
         <a href="contact.html" class="btn btn-primary">Contact Us →</a>
         <a href="about.html" class="btn btn-secondary">About CNCS</a>
